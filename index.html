@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- Custome css -->
+    <link rel="stylesheet" href="./stylesheet.css" />
+</head>
+
+<body>
+    <div class="container-fluid px-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dar">
+            <div class="container">
+                <span class="navbar-brand" href="#">Javascript Assignments</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Chapter 21 - 25</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main class="container main-body">
+        <div class="mainDiv container ">
+            <h3 class="text-center text-light">Chapter # 21 - 25
+                <!-- <br> -->
+                <span class="border border-top-0 border-end-0 border-bottom-0 font-sm-5">
+                    &nbsp; Strings &amp; its methods</span>
+            </h3>
+        </div>
+        <div class="mainContent row">
+            <div class="sec1 mt-3 col col-sm-12 col-md-12 col-lg-6 border border-danger border-start-0 border-bottom-0">
+                <h3 class="text-center text-primary mt-3">Input</h3>
+                <div class="childCol pt-5">
+                    <input type="text" id="inputField" placeholder="Enter your Value" class="input p-2 font-3" >
+                    <button class="btn clearBtn border border-danger border-start-0 border-top-0 border-end-0 text-danger" id="clearBtn" >Clear</button>
+                    
+                </div>
+            </div>
+            <!-- <br> -->
+
+            <div class="sec2 mt-3 col col-sm-12 col-md-12 col-lg-6 border border-danger border-end-0 border-top-0 ">
+                <h3 class="text-center text-primary mt-3 ">Original String</h3>
+                <div class="childCol p-2 text-center border text-light py-3" id="originalTextBox">
+                </div>
+            </div>
+        </div>
+        <div class="mainContent2 mt-5 row">
+            <div class="sec3 col col-sm-12 col-md-12 col-lg-6 border border-danger border-start-0  border-top-0 mt-3 p-3 text-center">
+                <button class="btn border border-primary text-primary mt-2" id="toLowerCase">Convert to Lowercase</button>
+                <button class="btn border border-primary text-primary mt-2" id="toUpperCase">Convert to Uppercase</button>
+                <button class="btn border border-primary text-primary mt-2" id="toCapitalize">Convert to Capitalize</button>
+                <button class="btn border border-primary text-primary mt-2" >Better Formating</button>
+                <button class="btn border border-primary text-primary mt-2">Print All Cities</button>
+                <button class="btn border border-primary text-primary mt-2">Add your City</button>
+                <button class="btn border border-primary text-primary mt-2">Find this Word</button>
+                <button class="btn border border-primary text-primary mt-2" >Check Your City</button>
+                <button class="btn border border-primary text-primary mt-2">Replace This Word</button>
+            </div>
+            <div class="sec4 col col-sm-12 col-md-12 col-lg-6 border border-danger border-end-0 border-bottom-0 mt-3 mb-3">
+                <div class="sec4Child m-3 border p-3 text-center text-primary" id="output">
+
+                </div>
+            </div>
+            <button class="btn border border-danger text-danger my-5" onclick="clearOutput()">Clear output</button>
+        </div>
+    </main>
+
+
+    <!-- Bootstrap js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <!-- scrit file --> 
+    <!-- <script src="./script.js"></script> -->
+    <script src="./script2.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+
+</html>
