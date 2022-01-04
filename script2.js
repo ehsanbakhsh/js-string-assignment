@@ -52,7 +52,7 @@ function addCities(){
 
 function clearInput(){
     if(!inputField.value){
-        toastifyError('Please Add some Value First!!!' , 'bottom' , 'center')
+        toastifyError('Input Field id Already cleared!!!' , 'bottom' , 'center')
     }else{
     inputField.value ="";
     toastifyError('Input Field CLeared' , 'bottom' , 'center')
