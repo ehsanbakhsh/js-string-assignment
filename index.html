@@ -48,33 +48,39 @@
         <div class="mainContent row">
             <div class="sec1 mt-3 col col-sm-12 col-md-12 col-lg-6 border border-danger border-start-0 border-bottom-0">
                 <h3 class="text-center text-primary mt-3">Input</h3>
-                <div class="childCol pt-5">
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Enter Your Value..." aria-label="Recipient's username" id="inputField" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="clearBtn">Clear</button>
+                  </div>
+                  
+                <!-- <div class="childCol pt-5">
                     <input type="text" id="inputField" placeholder="Enter your Value" class="input p-2 font-3" >
                     <button class="btn clearBtn border border-danger border-start-0 border-top-0 border-end-0 text-danger" id="clearBtn" >Clear</button>
                     
-                </div>
+                </div> -->
             </div>
             <!-- <br> -->
 
-            <div class="sec2 mt-3 col col-sm-12 col-md-12 col-lg-6 border border-danger border-end-0 border-top-0 ">
+            <div class="sec2 mt-3 col-12 col-sm-12 col-md-12 col-lg-6 border border-danger border-end-0 border-top-0 ">
                 <h3 class="text-center text-primary mt-3 ">Original String</h3>
                 <div class="childCol p-2 text-center border text-light py-3" id="originalTextBox">
                 </div>
             </div>
         </div>
         <div class="mainContent2 mt-5 row">
-            <div class="sec3 col col-sm-12 col-md-12 col-lg-6 border border-danger border-start-0  border-top-0 mt-3 p-3 text-center">
+            <div class="sec3 col-12 col-sm-12 col-md-12 col-lg-6 border border-danger border-start-0  border-top-0 mt-3 p-3 text-center h-auto">
                 <button class="btn border border-primary text-primary mt-2" id="toLowerCase">Convert to Lowercase</button>
                 <button class="btn border border-primary text-primary mt-2" id="toUpperCase">Convert to Uppercase</button>
                 <button class="btn border border-primary text-primary mt-2" id="toCapitalize">Convert to Capitalize</button>
-                <button class="btn border border-primary text-primary mt-2" >Better Formating</button>
-                <button class="btn border border-primary text-primary mt-2">Print All Cities</button>
-                <button class="btn border border-primary text-primary mt-2">Add your City</button>
-                <button class="btn border border-primary text-primary mt-2">Find this Word</button>
-                <button class="btn border border-primary text-primary mt-2" >Check Your City</button>
-                <button class="btn border border-primary text-primary mt-2">Replace This Word</button>
+                <button class="btn border border-primary text-primary mt-2" id="betterFormat">Better Formating</button>
+                <button class="btn border border-primary text-primary mt-2" id="orintCties">Print All Cities</button>
+                <button class="btn border border-primary text-primary mt-2" id="addCity">Add your City</button>
+                <button class="btn border border-primary text-primary mt-2" id="findWord">Find this Word</button>
+                <button class="btn border border-primary text-primary mt-2" id="checkCity" >Check Your City</button>
+                <button class="btn border border-primary text-primary mt-2" id="replaceWord" >Replace This Word</button>
             </div>
-            <div class="sec4 col col-sm-12 col-md-12 col-lg-6 border border-danger border-end-0 border-bottom-0 mt-3 mb-3">
+            <div class="sec4 col-12 col-sm-12 col-md-12 col-lg-6 border border-danger border-end-0 border-bottom-0 mt-3 mb-3">
                 <div class="sec4Child m-3 border p-3 text-center text-primary" id="output">
 
                 </div>
