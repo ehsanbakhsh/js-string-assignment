@@ -1,4 +1,6 @@
-// Element Selection
+var ehsan = "It works Properly";
+
+// Element SelectionEhsan
 
 var inputField = document.getElementById('inputField');
 var clearBtn = document.getElementById('clearBtn');
@@ -7,6 +9,8 @@ var toLowerCase = document.getElementById('toLowerCase');
 var toUpperCase = document.getElementById('toUpperCase');
 var toCapitalize = document.getElementById('toCapitalize');
 var betterFormat = document.getElementById('betterFormat');
+var printCties = document.getElementById("printCties");
+var addCity = document.getElementById("addCity");
 var output = document.getElementById('output');
 
 
@@ -20,11 +24,30 @@ toLowerCase.addEventListener('click' , convertToLocalLowerCase);
 toUpperCase.addEventListener('click' , convertToUpperCase);
 toCapitalize.addEventListener('click', convertToCapitalize)
 betterFormat.addEventListener('click' , convertToBetterFormat);
+printCties.addEventListener('click' , printCities);
+addCity.addEventListener('click' , addCities);
 
 
 // Event Functions
 
+function addCities(){
+    let city = inputField.value;
+    if(!inputField.value){
+        toastifyError("Please add a city name in input field." , "bottom" , "center")
+        return;
+    }
 
+        cityFirstLetter = city.charAt(0 , 1).toUpperCase();
+        // console.log(cityFirstLetter);
+        cityAllLetter = city.slice(1).toLowerCase();
+        // console.log(cityAllLetter);
+        cityWordInCapitalized = cityFirstLetter + cityAllLetter;
+        // console.log(cityWordInCapitalized);
+        
+        city.push(cityWordInCapitalized);
+        
+    
+}
 
 
 function clearInput(){
@@ -67,16 +90,33 @@ function convertToCapitalize(){
 }
 
 function convertToBetterFormat(){
+    if(!inputField.value){
+        toastifyError("Please Add Some Text." , "bottom" , "center")
+        return;
+    }else{
     toastifyError('Converted to Better Formatting Successfully' , 'bottom' , 'center');
+}
     clearStyling()
-    output.innerText = originalTextBox.innerText
-    // output.style.textTransform = "capitalize"
+    output.innerText = inputField.value;
+    // output.innerText = originalTextBox.innerText
+    output.style.textTransform = "capitalize"
     output.style.lineHeight = "2rem"
     output.style.wordSpacing = "3px"
     // output.innerText = convertToCapitalize();
     // output.innerText = convertToCapitalize(originalTextBox.innerText)
 
 }
+
+function printCities(){
+    // console.log(ehsan);
+    toastifyError("Succeccfully print cities." , "bottom" , "center")
+    var cityNames = ["Faisalabad " , " Islamabad " , " Peshawer " , " Lahore " , " Karachi " , " Rawalpindi"]
+    output.innerText = cityNames;
+}
+
+
+
+
 
 function clearStyling (){
     output.style.lineHeight = "1.6rem"
@@ -85,6 +125,8 @@ function clearStyling (){
 
 
 }
+
+
 
 // Toastify Error
 
