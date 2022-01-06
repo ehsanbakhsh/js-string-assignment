@@ -117,7 +117,6 @@ function printCities(){
 
 
 
-
 function clearStyling (){
     output.style.lineHeight = "1.6rem"
     output.style.wordSpacing = "1px"
